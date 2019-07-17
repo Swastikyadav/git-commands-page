@@ -1,0 +1,55 @@
+* {
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+html {
+    height: 100vh;
+    /* background: #100d15; */
+}   
+
+.container {
+    margin: 0 auto;
+    padding: 250px 0;
+    text-align: center;
+    /* color: #ecefe7; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 8px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* background: #ecefe7;
+    color: #100d15; */
+    border-radius: 10px;
+}
+#btn2 {
+    display: none;
+}
+.search {
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    width: 300px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Class List - JavaScript */
+
+.dark-theme {
+    background: #100d15;
+    color: #ecefe7;
+}
+.light-theme {
+    background: #ecefe7;
+    color: #100d15;
+}
