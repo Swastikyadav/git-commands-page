@@ -134,12 +134,19 @@ theme1.classList.add("light-theme");  // default button theme
 var theme2 = document.querySelector("#btn2");
 theme2.classList.add("dark-theme");
 
+var searchInput = document.querySelector(".search");
+
 // Change theme when clicked on button
 
 theme1.addEventListener("click", function() {
     document.body.classList.add("light-theme");
     this.style.display = "none";
     theme2.style.display = "block";
+
+    searchInput.style.backgroundColor = "#ecefe7";
+    searchInput.style.border = "1px solid #100d15";
+    searchInput.style.color = "#100d15";
+
 });
 theme2.addEventListener("click", function() {
     document.body.classList.remove("light-theme");
@@ -147,6 +154,10 @@ theme2.addEventListener("click", function() {
     theme2.classList.add("dark-theme");
     this.style.display = "none";
     theme1.style.display = "block";
+
+    searchInput.style.backgroundColor = "#100d15";
+    searchInput.style.border = "1px solid #ecefe7";
+    searchInput.style.color = "#ecefe7";
 });
 
 // Displaying random git command and description on page load.
@@ -175,7 +186,6 @@ document.addEventListener("keydown", function(e) {
 
 // Search Functionality
 
-var searchInput = document.querySelector(".search");
 searchInput.addEventListener("keydown", function(e) {
     if (e.keyCode == 13) {
 

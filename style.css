@@ -41,6 +41,9 @@ button {
     width: 300px;
     padding: 5px;
     font-weight: bold;
+    background: #100d15;
+    color: #ecefe7;
+    border: 1px solid #ecefe7;
 }
 
 /* Class List - JavaScript */
